@@ -39,7 +39,7 @@ int maxPairFast(const vector<int>&v) {
 	}
 
 	for (int i = 0; i < n; i++) {
-		if ((v[i] != v[maxIndex1]) && ((maxIndex2 == -1) || (v[i] > v[maxIndex2]))) {
+		if ((i != maxIndex1) && ((maxIndex2 == -1) || (v[i] > v[maxIndex2]))) {
 			maxIndex2 = i;
 		}
 	}
